@@ -118,7 +118,7 @@ namespace NuGet.Services.AzureSearch
                     c.Resolve<IOptionsSnapshot<AzureSearchConfiguration>>(),
                     c.Resolve<ILogger<VersionListDataClient>>()));
 
-            containerBuilder // why do we need this and L111?
+            containerBuilder
                 .Register(c =>
                 {
                     var options = c.Resolve<IOptionsSnapshot<AzureSearchConfiguration>>();
