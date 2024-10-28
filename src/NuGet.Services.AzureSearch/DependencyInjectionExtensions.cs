@@ -118,7 +118,7 @@ namespace NuGet.Services.AzureSearch
                     c.Resolve<IOptionsSnapshot<AzureSearchConfiguration>>(),
                     c.Resolve<ILogger<VersionListDataClient>>()));
 
-            containerBuilder
+            containerBuilder // How do this and L111 work together? How is the Keyed instance resolved if the key is the same?
                 .Register(c =>
                 {
                     var options = c.Resolve<IOptionsSnapshot<AzureSearchConfiguration>>();
