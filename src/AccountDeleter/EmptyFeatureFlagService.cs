@@ -328,23 +328,5 @@ namespace NuGetGallery.AccountDeleter
         {
             throw new NotImplementedException();
         }
-
-        public bool IsQueueBackEnabled()
-        {
-            // Until this feature is enabled by default, we will assume it is turned off here.
-            return false;
-        }
-
-        public bool IsOrchestratorLeaseEnabled()
-        {
-            // Until this feature is enabled by default, we will assume it is turned off here.
-            return false;
-        }
-
-        public bool IsExtraValidationLoggingEnabled()
-        {
-            // Until this feature is enabled by default, we will assume it is turned off here.
-            return false;
-        }
     }
 }
